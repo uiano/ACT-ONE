@@ -3,7 +3,7 @@ This user manual describes the features of the specification language ACT ONE in
 The IDE allows to create ACT ONE specifications and to evaluate terms later.
 
 ## Installation
-In the folder [distribution](distribution), binaries for Windows, Linux, and Mac are provided.
+In the current [release](releases), binaries for Windows, Linux, and Mac are provided.
 Extract the distribution and run the actone script.
 
 ## Using the IDE
