@@ -1,0 +1,19 @@
+TODO for ACT ONE
+- Move project to github
+- bootstrap=true - can we avoid that?
+- why is codegen of battelships so slow? --> get output should produce a reference, not a name
+- add a hint that display can be vertical
+- create unit tests for the editor and the code generation
+- add binary operators as binary (with parenthesis)
+- align constructor and variable definitions (: and ->)
+- improve user interface - replace the standard texts for empty and not available
+- build directly on tools.uia.no and avoid distribution folder
+- implement or remove subsorts
+- remove variables from completion menu for reduce and let
+- use forall in NoVariablesInReductionsCheck and in VariableInLeftHand
+- improve editors such that you can type the verbatim text
+- create warning when operators are not defined on all constructors
+- create warning when axiom left sides overlap (some values defined twice)
+- make SMALLINT reduce: exp(O(), s(s(s(s(s(s(s(s(O()))))))))) give two solutions: 0 and s(0)
+- find let references in other let definitions
+- allow printing of specifications
