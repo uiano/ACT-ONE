@@ -45,6 +45,11 @@ You can also copy a complete specification in the logical view.
 The language used here is similar to the ACT ONE language from the ACT ONE book.
 It is adapted to the needs of the course DAT233 at University of Agder.
 
+### Built-in types
+The ACT ONE IDE comes with the following built-in types: ANY, BOOLEAN, INTEGER, STRING.
+Their interface is defined in ACT ONE itself. You find those definitions in the 'Modules Pool'/Languages/ActOne/accessories.
+If you want to use one of those languages, you need to import it.
+
 ### Detailed language description
 An ACT ONE specification has the following overall format.
 ```
