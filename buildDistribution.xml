@@ -76,6 +76,43 @@
       <zipfileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.win.zip_f755" filemode="755" prefix="bin" />
       <fileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.win.zip" />
     </zip>
+    <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip" />
+    <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip/bin" />
+    <copy todir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip/bin">
+      <fileset file="${basedir}/solutions/ActOne.build/source_gen/ActOne/build/actone.vmoptions" />
+      <filterchain>
+        <fixcrlf eol="crlf" />
+      </filterchain>
+      <globmapper from="*" to="actone.exe.vmoptions" />
+    </copy>
+    <copy todir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip/bin">
+      <fileset file="${basedir}/solutions/ActOne.build/source_gen/ActOne/build/actone64.vmoptions" />
+      <filterchain>
+        <fixcrlf eol="crlf" />
+      </filterchain>
+      <globmapper from="*" to="actone64.exe.vmoptions" />
+    </copy>
+    <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip_f755" />
+    <copy todir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip_f755">
+      <fileset file="${basedir}/solutions/ActOne.build/source_gen/ActOne/build/actone.bat" />
+      <filterchain>
+        <fixcrlf eol="crlf" />
+      </filterchain>
+    </copy>
+    <zip destfile="${build.layout}/ActOne-${ActOne.build.number}-with-JDK.win.zip">
+      <fileset dir="${artifacts.ActOne}" />
+      <zipfileset dir="${mps_home}/bin/win" prefix="bin">
+        <exclude name="**/*.exe" />
+        <exclude name="**/*.bat" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/bin/win" prefix="bin" filemode="755">
+        <include name="**/*.exe" />
+        <include name="**/append.bat" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/jbr" prefix="jbr" />
+      <zipfileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip_f755" filemode="755" prefix="bin" />
+      <fileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_-with-JDK.win.zip" />
+    </zip>
     <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.macos.zip" />
     <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.macos.zip/ActOne ${version}.app" />
     <mkdir dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.macos.zip/ActOne ${version}.app/Contents" />

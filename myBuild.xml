@@ -90,10 +90,6 @@
       <fileset file="${basedir}/icons/aboutACTONE.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
-    <mkdir dir="${build.layout}/jbr" />
-    <copy todir="${build.layout}/jbr">
-      <fileset dir="${mps_home}/jbr" />
-    </copy>
     <mkdir dir="${build.layout}/plugins" />
     <mkdir dir="${build.layout}/plugins/svn4idea" />
     <copy todir="${build.layout}/plugins/svn4idea">

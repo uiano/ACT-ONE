@@ -4,7 +4,7 @@ It allows to create ACT ONE specifications and to evaluate terms later.
 
 ## Installation
 In the current [release](/../../releases), binaries for Windows, Linux, and Mac are provided.
-Extract the distribution and run the actone script.
+Extract the distribution and run the actone script. You need to have installed a JDK unless you install the Windows version with the JDK included.
 
 ## User manual
 The language and the IDE are described in the [User Manual](documentation/UserManual.md).
