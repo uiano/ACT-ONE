@@ -9,6 +9,10 @@
   <property file="${artifacts.ActOne}/build.properties" prefix="import.ActOne" />
   <property name="ActOne.date" value="${import.ActOne.ActOne.date}" />
   <property name="ActOne.build.number" value="${import.ActOne.ActOne.build.number}" />
+  <property name="mpsBootstrapCore.version.major" value="${import.ActOne.mpsBootstrapCore.version.major}" />
+  <property name="mpsBootstrapCore.version.minor" value="${import.ActOne.mpsBootstrapCore.version.minor}" />
+  <property name="mpsBootstrapCore.version.bugfixNr" value="${import.ActOne.mpsBootstrapCore.version.bugfixNr}" />
+  <property name="mpsBootstrapCore.version.eap" value="${import.ActOne.mpsBootstrapCore.version.eap}" />
   <property name="mpsBootstrapCore.version" value="${import.ActOne.mpsBootstrapCore.version}" />
   
   <target name="assemble" depends="fetchDependencies">
@@ -165,7 +169,7 @@
       <zipfileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.macos.zip_f7551" filemode="755" prefix="ActOne ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/ActOne-_dl__lbrace_build.number_rbrace_.macos.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">ActOneDistribution.version=${version}${line.separator}ActOne.date=${ActOne.date}${line.separator}ActOne.build.number=${ActOne.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">ActOneDistribution.version=${version}${line.separator}ActOne.date=${ActOne.date}${line.separator}ActOne.build.number=${ActOne.build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents">

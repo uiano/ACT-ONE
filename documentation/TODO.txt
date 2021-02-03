@@ -1,6 +1,9 @@
 TODO for ACT ONE
+- Import of own specifications does not work, see Import_SANDBOX
+- We never get the result "NO REDUCTION FOUND:" in debug
 - bootstrap=true - can we avoid that?
-- why is codegen of battelships so slow? --> get output should produce a reference, not a name
+- underline should not be allowed on RHS
+- why is codegen of battleships so slow? --> get output should produce a reference, not a name
 - add a hint that display can be vertical
 - create unit tests for the editor and the code generation
 - add binary operators as binary (with parenthesis)
@@ -17,3 +20,4 @@ TODO for ACT ONE
 - find let references in other let definitions
 - allow printing of specifications
 - remove the unused icons
+- check the errors that appear if you download a fresh copy of ACT ONE and maybe describe the startup sequence.

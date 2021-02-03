@@ -164,6 +164,9 @@
   </node>
   <node concept="bkt5q" id="NKAPmWKFFW">
     <property role="TrG5h" value="INTEGER_SANDBOX" />
+    <node concept="bklvD" id="3Fdme43ETYD" role="blzGn">
+      <property role="TrG5h" value="DDD" />
+    </node>
     <node concept="26FcCh" id="72lILvQll5F" role="pRJcv">
       <node concept="2a4bCg" id="NKAPmXaKUV" role="26FcCg">
         <property role="TrG5h" value="i" />
@@ -208,8 +211,6 @@
     <node concept="oBdEI" id="1d4Y4$nY2jf" role="YRu88">
       <property role="oBdEE" value="Example usage of Integer-specification" />
     </node>
-    <node concept="rdghn" id="1d4Y4$nY2cy" role="YRu88" />
-    <node concept="rdghn" id="1d4Y4$nY2eK" role="YRu88" />
     <node concept="YRuf3" id="59ZfJ2V8B9x" role="YRu88">
       <property role="1lq2J7" value="0" />
       <property role="1lgsvm" value="true" />
@@ -640,7 +641,6 @@
         </node>
       </node>
     </node>
-    <node concept="rdghn" id="NKAPmWKFXQ" role="YRu88" />
     <node concept="3QKWG5" id="NKAPmWKFPu" role="3QKWGc">
       <ref role="3QKWG4" to="zaie:7zB5IrGSITB" resolve="BOOLEAN" />
     </node>
@@ -650,11 +650,9 @@
   </node>
   <node concept="bkt5q" id="1NmK9fKHf5L">
     <property role="TrG5h" value="STRING_SANDBOX" />
-    <node concept="rdghn" id="1d4Y4$nY2lw" role="YRu88" />
     <node concept="oBdEI" id="1d4Y4$nY2mL" role="YRu88">
       <property role="oBdEE" value="Example usage of String-specification" />
     </node>
-    <node concept="rdghn" id="1d4Y4$nY2m8" role="YRu88" />
     <node concept="rdghn" id="1NmK9fL6usS" role="YRu88" />
     <node concept="oBdEI" id="1NmK9fL6utz" role="YRu88">
       <property role="oBdEE" value="Normal Testing" />
@@ -768,7 +766,6 @@
         </node>
       </node>
     </node>
-    <node concept="rdghn" id="1NmK9fL6uuh" role="YRu88" />
     <node concept="3QKWG5" id="1NmK9fKHf5M" role="3QKWGc">
       <ref role="3QKWG4" to="zaie:NKAPmXIkAw" resolve="STRING" />
     </node>
@@ -854,6 +851,35 @@
     </node>
     <node concept="3QKWG5" id="6lHtNhop4n7" role="3QKWGc">
       <ref role="3QKWG4" to="zaie:34Rb5ObEaFs" resolve="ANY" />
+    </node>
+  </node>
+  <node concept="bkt5q" id="4C0fQ2O$4xZ">
+    <property role="TrG5h" value="IMPORT_SANDBOX" />
+    <node concept="YRuf3" id="4C0fQ2O$4BO" role="YRu88">
+      <property role="1lq2J7" value="0" />
+      <property role="1lgsvm" value="true" />
+      <node concept="pQlao" id="4C0fQ2O$4Co" role="YRufA">
+        <ref role="pQlar" node="7zB5IrGSIPQ" resolve="d1" />
+      </node>
+    </node>
+    <node concept="2a5yee" id="4C0fQ2O$4_A" role="pRMhZ">
+      <node concept="pQlao" id="4C0fQ2O$4Ab" role="2a5y9Q">
+        <ref role="pQlar" node="7zB5IrGSIPQ" resolve="d1" />
+      </node>
+      <node concept="pQlao" id="4C0fQ2O$4AJ" role="2a5y9N">
+        <ref role="pQlar" node="7zB5IrGSIPW" resolve="d2" />
+      </node>
+    </node>
+    <node concept="26FcCh" id="4C0fQ2O$4$c" role="pRJcv">
+      <node concept="2a4bCg" id="4C0fQ2O$4$d" role="26FcCg">
+        <property role="TrG5h" value="das" />
+      </node>
+      <node concept="bl5qV" id="4C0fQ2O$4$e" role="26FcCr">
+        <ref role="bl5qO" node="7zB5IrGSIPD" resolve="Digit" />
+      </node>
+    </node>
+    <node concept="3QKWG5" id="4C0fQ2O$4zI" role="3QKWGc">
+      <ref role="3QKWG4" node="7zB5IrGSIPA" resolve="DIGIT" />
     </node>
   </node>
 </model>
