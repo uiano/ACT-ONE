@@ -1,7 +1,6 @@
 TODO for ACT ONE
-- Import of own specifications does not work, see Import_SANDBOX
+- do not import in Java unused predefined libraries
 - We never get the result "NO REDUCTION FOUND:" in debug
-- bootstrap=true - can we avoid that?
 - underline should not be allowed on RHS
 - why is codegen of battleships so slow? --> get output should produce a reference, not a name
 - add a hint that display can be vertical

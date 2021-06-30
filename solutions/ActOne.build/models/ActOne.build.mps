@@ -157,9 +157,7 @@
       <concept id="6818892319992984815" name="jetbrains.mps.build.mps.structure.BuildMps_TipsPackage" flags="ng" index="20sUq0">
         <reference id="7323166234190549907" name="tips" index="21GgXK" />
       </concept>
-      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
-        <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
-      </concept>
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh" />
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
@@ -253,9 +251,7 @@
     <property role="TrG5h" value="ActOne" />
     <property role="2DA0ip" value="../../" />
     <property role="turDy" value="myBuild.xml" />
-    <node concept="2igEWh" id="2JTt9mnEwPz" role="1hWBAP">
-      <property role="2igJW4" value="true" />
-    </node>
+    <node concept="2igEWh" id="2JTt9mnEwPz" role="1hWBAP" />
     <node concept="10PD9b" id="2JTt9mnwi4U" role="10PD9s" />
     <node concept="3b7kt6" id="2JTt9mnwi4V" role="10PD9s" />
     <node concept="1zClus" id="2JTt9mnwi5b" role="3989C9">
