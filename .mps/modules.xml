@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ActOne/ActOne.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ActOne.build/ActOne.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.plugin/ActOne.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.runtime/ActOne.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.samples/ActOne.samples.msd" folder="" />
