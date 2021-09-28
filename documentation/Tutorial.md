@@ -3,8 +3,11 @@ Here we describe how to write a Shidoku specification in the IDE.
 We do not explain why this is a good specification - you find more information about that in the [User Manual](documentation/UserManual.md).
 
 ## Installation
-In the folder [distribution](distribution), binaries for Windows, Linux, and Mac are provided.
-Extract the distribution and run the actone script. Be patient - the application takes some time to start before showing the splash screen.
+ACT ONE is provided as a plugin for [MPS](https://www.jetbrains.com/mps/),
+which needs to be installed from [here](https://www.jetbrains.com/help/mps/installation-guide.html).
+In the current [release](/../../releases), you find the plugin.
+Store the zip-file and open File->Settings->Plugins.
+Click on the gearwheel symbol and install from disk, where you stored the file.
 
 ## Creating an empty specification
 First, you need to create a new project, either by clicking on "New project" or by selecting File -> New Project.
