@@ -41,6 +41,11 @@ You can mark the relevant part of the specification, and then copy it (<kbd>Ctrl
 Make sure that you copy the correct kind of elements to the correct places.
 You can also copy a complete specification in the logical view.
 
+### Newlines in the specification
+When you want to add empty lines, you can do so by typing <kbd>Ctrl+Shift+Enter</kbd>.
+It is also possible to add comments for the generic newlines, 
+  see the [MPS documentation](https://www.jetbrains.com/help/mps/generic-placeholders-and-generic-comments.html).
+
 ## Language ACT ONE
 The language used here is similar to the ACT ONE language from the ACT ONE book.
 It is adapted to the needs of the course DAT233 at University of Agder.

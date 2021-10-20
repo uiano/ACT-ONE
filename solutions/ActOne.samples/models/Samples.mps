@@ -6360,6 +6360,10 @@
         <ref role="bl5qO" node="72lILvPjxjb" resolve="Elem" />
       </node>
     </node>
+    <node concept="3DQ70j" id="5CmczAvHegf" role="lGtFl">
+      <property role="3V$3am" value="operators" />
+      <property role="3V$3ak" value="b4fcd96f-fa06-46a4-9520-beaeb32aa9a1/8445081754001417286/6300386900480909287" />
+    </node>
     <node concept="pRJ9f" id="72lILvPjEmw" role="pRMtA">
       <property role="TrG5h" value="block1" />
       <node concept="bl5qV" id="72lILvPjEne" role="pRJ9k">
@@ -6395,6 +6399,19 @@
       <node concept="bl5qV" id="72lILvPjEp6" role="pRJ9p">
         <ref role="bl5qO" node="72lILvPjxil" resolve="Line" />
       </node>
+    </node>
+    <node concept="pRJ9f" id="72lILvPj_0y" role="pRMtA">
+      <property role="TrG5h" value="transpose" />
+      <node concept="bl5qV" id="72lILvPj_0z" role="pRJ9k">
+        <ref role="bl5qO" node="72lILvPjxij" resolve="Shidoku" />
+      </node>
+      <node concept="bl5qV" id="72lILvPj_0$" role="pRJ9p">
+        <ref role="bl5qO" node="72lILvPjxij" resolve="Shidoku" />
+      </node>
+    </node>
+    <node concept="3DQ70j" id="5CmczAvHeh6" role="lGtFl">
+      <property role="3V$3am" value="operators" />
+      <property role="3V$3ak" value="b4fcd96f-fa06-46a4-9520-beaeb32aa9a1/8445081754001417286/6300386900480909287" />
     </node>
     <node concept="pRJ9f" id="72lILvPjxlZ" role="pRMtA">
       <property role="TrG5h" value="correctShidoku" />
@@ -6442,15 +6459,6 @@
       </node>
       <node concept="bl5qV" id="72lILvPjBwx" role="pRJ9p">
         <ref role="bl5qO" to="zaie:7zB5IrGSITC" resolve="Bool" />
-      </node>
-    </node>
-    <node concept="pRJ9f" id="72lILvPj_0y" role="pRMtA">
-      <property role="TrG5h" value="transpose" />
-      <node concept="bl5qV" id="72lILvPj_0z" role="pRJ9k">
-        <ref role="bl5qO" node="72lILvPjxij" resolve="Shidoku" />
-      </node>
-      <node concept="bl5qV" id="72lILvPj_0$" role="pRJ9p">
-        <ref role="bl5qO" node="72lILvPjxij" resolve="Shidoku" />
       </node>
     </node>
     <node concept="bklvD" id="72lILvPjxij" role="blzGn">
