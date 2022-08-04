@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -178,6 +178,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -1658,13 +1659,16 @@
             <node concept="3clFbS" id="44BxL6ptB63" role="3clFbx">
               <node concept="2MkqsV" id="44BxL6ptBf6" role="3cqZAp">
                 <node concept="3cpWs3" id="44BxL6ptC7I" role="2MkJ7o">
-                  <node concept="2OqwBi" id="44BxL6pDm4j" role="3uHU7w">
-                    <node concept="2GrUjf" id="44BxL6ptC80" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="44BxL6pt_AB" resolve="var" />
+                  <node concept="2OqwBi" id="FYKOQznJVu" role="3uHU7w">
+                    <node concept="2OqwBi" id="44BxL6pDm4j" role="2Oq$k0">
+                      <node concept="2GrUjf" id="44BxL6ptC80" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="44BxL6pt_AB" resolve="var" />
+                      </node>
+                      <node concept="3TrEf2" id="44BxL6pDmkF" role="2OqNvi">
+                        <ref role="3Tt5mk" to="2rg6:6Rc5uqpP71a" resolve="variableRef" />
+                      </node>
                     </node>
-                    <node concept="3TrEf2" id="44BxL6pDmkF" role="2OqNvi">
-                      <ref role="3Tt5mk" to="2rg6:6Rc5uqpP71a" resolve="variableRef" />
-                    </node>
+                    <node concept="2Iv5rx" id="FYKOQznJVv" role="2OqNvi" />
                   </node>
                   <node concept="Xl_RD" id="44BxL6ptBfi" role="3uHU7B">
                     <property role="Xl_RC" value="Missing expected variable declarations in left-hand side: " />
@@ -1863,18 +1867,21 @@
                     <node concept="Xl_RD" id="44BxL6pPBxt" role="3uHU7B">
                       <property role="Xl_RC" value="Unexpected variable declaration found outside of axioms: " />
                     </node>
-                    <node concept="2OqwBi" id="44BxL6pPCMO" role="3uHU7w">
-                      <node concept="1PxgMI" id="44BxL6pPC_3" role="2Oq$k0">
-                        <node concept="chp4Y" id="44BxL6pPC_F" role="3oSUPX">
-                          <ref role="cht4Q" to="2rg6:6Rc5uqpP719" resolve="VariableReference" />
+                    <node concept="2OqwBi" id="FYKOQznJVE" role="3uHU7w">
+                      <node concept="2OqwBi" id="44BxL6pPCMO" role="2Oq$k0">
+                        <node concept="1PxgMI" id="44BxL6pPC_3" role="2Oq$k0">
+                          <node concept="chp4Y" id="44BxL6pPC_F" role="3oSUPX">
+                            <ref role="cht4Q" to="2rg6:6Rc5uqpP719" resolve="VariableReference" />
+                          </node>
+                          <node concept="37vLTw" id="44BxL6pPBXk" role="1m5AlR">
+                            <ref role="3cqZAo" node="44BxL6pPhQj" resolve="current" />
+                          </node>
                         </node>
-                        <node concept="37vLTw" id="44BxL6pPBXk" role="1m5AlR">
-                          <ref role="3cqZAo" node="44BxL6pPhQj" resolve="current" />
+                        <node concept="3TrEf2" id="44BxL6pPCYq" role="2OqNvi">
+                          <ref role="3Tt5mk" to="2rg6:6Rc5uqpP71a" resolve="variableRef" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="44BxL6pPCYq" role="2OqNvi">
-                        <ref role="3Tt5mk" to="2rg6:6Rc5uqpP71a" resolve="variableRef" />
-                      </node>
+                      <node concept="2Iv5rx" id="FYKOQznJVF" role="2OqNvi" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="44BxL6pPD5u" role="1urrMF">
