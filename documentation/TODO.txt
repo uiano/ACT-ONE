@@ -20,3 +20,4 @@ TODO for ACT ONE
 - allow printing of specifications
 - remove the unused icons
 - check the errors that appear if you download a fresh copy of ACT ONE and maybe describe the startup sequence.
+- allow 'purpose' (text) for operations and types
