@@ -4,6 +4,7 @@ TODO for ACT ONE
 - underline should not be allowed on RHS
 - why is codegen of battleships so slow? --> get output should produce a reference, not a name
 - add a hint that display can be vertical
+- introduce "otherwise" for a rule that is applied if the others do not apply, we can only have one otherwise per operator
 - create unit tests for the editor and the code generation
 - add binary operators as binary (with parenthesis)
 - align constructor and variable definitions (: and ->)
