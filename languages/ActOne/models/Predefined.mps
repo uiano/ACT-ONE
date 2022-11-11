@@ -14,9 +14,20 @@
       </concept>
     </language>
     <language id="b4fcd96f-fa06-46a4-9520-beaeb32aa9a1" name="ActOne">
+      <concept id="8112596015367418118" name="ActOne.structure.Variables" flags="ng" index="26FcCh">
+        <child id="8112596015367418119" name="declarations" index="26FcCg" />
+        <child id="8112596015367418124" name="sort" index="26FcCr" />
+      </concept>
+      <concept id="5276604095072500071" name="ActOne.structure.VariableDeclaration" flags="ng" index="2a4bCg" />
+      <concept id="5276604095072592121" name="ActOne.structure.Axiom" flags="ng" index="2a5yee">
+        <child id="5276604095072592132" name="rightTerm" index="2a5y9N" />
+        <child id="5276604095072592129" name="leftTerm" index="2a5y9Q" />
+      </concept>
       <concept id="8445081754001449717" name="ActOne.structure.Sort" flags="ng" index="bklvD" />
       <concept id="8445081754001417286" name="ActOne.structure.Specification" flags="ng" index="bkt5q">
         <child id="8445081754001526283" name="sorts" index="blzGn" />
+        <child id="6300386900480986014" name="variables" index="pRJcv" />
+        <child id="6300386900480908542" name="axioms" index="pRMhZ" />
         <child id="6300386900480909287" name="operators" index="pRMtA" />
         <child id="6849908093511409942" name="actions" index="YRu88" />
         <child id="6816510776893429603" name="imports" index="3QKWGc" />
@@ -27,10 +38,20 @@
       <concept id="4779260070289444120" name="ActOne.structure.LineComment" flags="ng" index="oBdEI">
         <property id="4779260070289444124" name="comment" index="oBdEE" />
       </concept>
+      <concept id="6300386900481288729" name="ActOne.structure.OperatorReference" flags="ng" index="pQlao">
+        <reference id="6300386900481288730" name="ref" index="pQlar" />
+        <child id="7054597004572770024" name="parameters" index="EZGxL" />
+      </concept>
       <concept id="6300386900480985806" name="ActOne.structure.Operator" flags="ng" index="pRJ9f">
         <property id="6300386900480985810" name="isConstructor" index="pRJ9j" />
         <child id="6300386900480985813" name="parameters" index="pRJ9k" />
         <child id="6300386900480985816" name="output" index="pRJ9p" />
+      </concept>
+      <concept id="6940935696597855592" name="ActOne.structure.IntValue" flags="ng" index="2GQ0ll">
+        <property id="4779260070297371280" name="value" index="p6XkA" />
+      </concept>
+      <concept id="7911722725550616649" name="ActOne.structure.VariableReference" flags="ng" index="3O66mJ">
+        <reference id="7911722725550616650" name="variableRef" index="3O66mG" />
       </concept>
       <concept id="6816510776893429610" name="ActOne.structure.SpecificationReference" flags="ng" index="3QKWG5">
         <reference id="6816510776893429611" name="reference" index="3QKWG4" />
@@ -239,6 +260,31 @@
   </node>
   <node concept="bkt5q" id="NKAPmXIkAw">
     <property role="TrG5h" value="STRING" />
+    <node concept="26FcCh" id="6RtThD6dX7p" role="pRJcv">
+      <node concept="2a4bCg" id="6RtThD6dX7q" role="26FcCg">
+        <property role="TrG5h" value="x" />
+      </node>
+      <node concept="2a4bCg" id="6RtThD6dX7_" role="26FcCg">
+        <property role="TrG5h" value="y" />
+      </node>
+      <node concept="bl5qV" id="6RtThD6dX7r" role="26FcCr">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+    </node>
+    <node concept="2a5yee" id="6RtThD6dX5g" role="pRMhZ">
+      <node concept="pQlao" id="6RtThD6dX78" role="2a5y9Q">
+        <ref role="pQlar" node="6RtThD6dX5$" resolve="add" />
+        <node concept="3O66mJ" id="6RtThD6dX83" role="EZGxL">
+          <ref role="3O66mG" node="6RtThD6dX7q" resolve="x" />
+        </node>
+        <node concept="3O66mJ" id="6RtThD6dX8s" role="EZGxL">
+          <ref role="3O66mG" node="6RtThD6dX7_" resolve="y" />
+        </node>
+      </node>
+      <node concept="2GQ0ll" id="6RtThD6dXaq" role="2a5y9N">
+        <property role="p6XkA" value="1" />
+      </node>
+    </node>
     <node concept="3QKWG5" id="NKAPmXIkBD" role="3QKWGc">
       <ref role="3QKWG4" node="49jlVpri7XO" resolve="INTEGER" />
     </node>
@@ -276,6 +322,18 @@
       </node>
       <node concept="bl5qV" id="NKAPmXIkBI" role="pRJ9p">
         <ref role="bl5qO" node="NKAPmXIkB5" resolve="String" />
+      </node>
+    </node>
+    <node concept="pRJ9f" id="6RtThD6dX5$" role="pRMtA">
+      <property role="TrG5h" value="add" />
+      <node concept="bl5qV" id="6RtThD6dX69" role="pRJ9k">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="bl5qV" id="6RtThD6dX6j" role="pRJ9k">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="bl5qV" id="6RtThD6dX5_" role="pRJ9p">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
       </node>
     </node>
     <node concept="bklvD" id="NKAPmXIkB5" role="blzGn">
