@@ -1817,14 +1817,20 @@
       <node concept="2iRfu4" id="59ZfJ2WN9Ve" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4rkyKpWWa5t">
-    <property role="3GE5qa" value="Textual" />
-    <ref role="1XX52x" to="2rg6:7q_p6GjD3nE" resolve="IExpression" />
-    <node concept="3EZMnI" id="4rkyKpWWa7i" role="2wV5jI">
-      <node concept="l2Vlx" id="4rkyKpWWa7j" role="2iSdaV" />
-      <node concept="3F1sOY" id="4rkyKpWWa7r" role="3EZMnx">
-        <ref role="1NtTu8" to="2rg6:7q_p6GjExdq" resolve="expression" />
+  <node concept="24kQdi" id="2n5DTFeBLJP">
+    <property role="3GE5qa" value="Operation" />
+    <ref role="1XX52x" to="2rg6:2n5DTFeBGJA" resolve="PlusExpression" />
+    <node concept="3EZMnI" id="2n5DTFeBLKN" role="2wV5jI">
+      <node concept="3F1sOY" id="2n5DTFeBLL9" role="3EZMnx">
+        <ref role="1NtTu8" to="2rg6:2n5DTFeBGM5" resolve="lTerm" />
       </node>
+      <node concept="3F0ifn" id="2n5DTFeBLLr" role="3EZMnx">
+        <property role="3F0ifm" value="+" />
+      </node>
+      <node concept="3F1sOY" id="2n5DTFeBLLO" role="3EZMnx">
+        <ref role="1NtTu8" to="2rg6:2n5DTFeBGKV" resolve="rTerm" />
+      </node>
+      <node concept="l2Vlx" id="2n5DTFeBLKQ" role="2iSdaV" />
     </node>
   </node>
 </model>
