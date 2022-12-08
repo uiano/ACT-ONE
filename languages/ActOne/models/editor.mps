@@ -132,6 +132,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
@@ -752,9 +753,35 @@
         </node>
         <node concept="PMmxH" id="59ZfJ2WNa6f" role="1QoVPY">
           <ref role="PMmxG" node="59ZfJ2WN9TP" resolve="OperatorParametersHorizontal" />
+          <node concept="pkWqt" id="3LatIp2JdDT" role="cStSX">
+            <node concept="3clFbS" id="3LatIp2JdDU" role="2VODD2">
+              <node concept="3clFbF" id="3LatIp2JdGc" role="3cqZAp">
+                <node concept="3fqX7Q" id="3LatIp2Kv6A" role="3clFbG">
+                  <node concept="2OqwBi" id="3LatIp2Kv6C" role="3fr31v">
+                    <node concept="pncrf" id="3LatIp2Kv6D" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="3LatIp2Kv6E" role="2OqNvi">
+                      <ref role="3TsBF5" to="2rg6:59ZfJ2WxEZP" resolve="vertical" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="PMmxH" id="59ZfJ2WHmRz" role="1QoS34">
           <ref role="PMmxG" node="59ZfJ2WHmsZ" resolve="OperatorParametersVertical" />
+          <node concept="pkWqt" id="3LatIp2JcB0" role="cStSX">
+            <node concept="3clFbS" id="3LatIp2JcB1" role="2VODD2">
+              <node concept="3clFbF" id="3LatIp2JcHF" role="3cqZAp">
+                <node concept="2OqwBi" id="3LatIp2JcYY" role="3clFbG">
+                  <node concept="pncrf" id="3LatIp2JcHE" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3LatIp2Jdrn" role="2OqNvi">
+                    <ref role="3TsBF5" to="2rg6:59ZfJ2WxEZP" resolve="vertical" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="1k$dNIAXh1G" role="3EZMnx">
