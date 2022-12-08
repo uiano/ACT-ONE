@@ -18,6 +18,7 @@
         <child id="8112596015367418119" name="declarations" index="26FcCg" />
         <child id="8112596015367418124" name="sort" index="26FcCr" />
       </concept>
+      <concept id="8112596015369271211" name="ActOne.structure.AnonVariable" flags="ng" index="26K0MW" />
       <concept id="5276604095072500071" name="ActOne.structure.VariableDeclaration" flags="ng" index="2a4bCg" />
       <concept id="5276604095072592121" name="ActOne.structure.Axiom" flags="ng" index="2a5yee">
         <child id="5276604095072592132" name="rightTerm" index="2a5y9N" />
@@ -57,9 +58,6 @@
       </concept>
       <concept id="7333886121707328804" name="ActOne.structure.LetReference" flags="ng" index="1mjQuQ">
         <reference id="7333886121707328805" name="reference" index="1mjQuR" />
-      </concept>
-      <concept id="7911722725550616649" name="ActOne.structure.VariableReference" flags="ng" index="3O66mJ">
-        <reference id="7911722725550616650" name="variableRef" index="3O66mG" />
       </concept>
       <concept id="6816510776893429610" name="ActOne.structure.SpecificationReference" flags="ng" index="3QKWG5">
         <reference id="6816510776893429611" name="reference" index="3QKWG4" />
@@ -145,17 +143,27 @@
         <ref role="pQlar" node="4TD2_n$8mnu" resolve="True" />
       </node>
     </node>
-    <node concept="2a5yee" id="4TD2_n$8mu8" role="pRMhZ">
-      <node concept="pQlao" id="4TD2_n$8muf" role="2a5y9Q">
+    <node concept="2a5yee" id="ZRpfeISN7f" role="pRMhZ">
+      <node concept="pQlao" id="ZRpfeISN7R" role="2a5y9Q">
         <ref role="pQlar" node="4TD2_n$8mh8" resolve="and" />
-        <node concept="pQlao" id="4TD2_n$8mul" role="EZGxL">
+        <node concept="pQlao" id="ZRpfeISN87" role="EZGxL">
           <ref role="pQlar" node="4TD2_n$8mnz" resolve="False" />
         </node>
-        <node concept="3O66mJ" id="4TD2_n$8mz6" role="EZGxL">
-          <ref role="3O66mG" node="4TD2_n$8mhm" resolve="b" />
+        <node concept="26K0MW" id="ZRpfeISNb8" role="EZGxL" />
+      </node>
+      <node concept="pQlao" id="ZRpfeISNew" role="2a5y9N">
+        <ref role="pQlar" node="4TD2_n$8mnz" resolve="False" />
+      </node>
+    </node>
+    <node concept="2a5yee" id="ZRpfeISNg5" role="pRMhZ">
+      <node concept="pQlao" id="ZRpfeISNgD" role="2a5y9Q">
+        <ref role="pQlar" node="4TD2_n$8mh8" resolve="and" />
+        <node concept="26K0MW" id="ZRpfeISNgT" role="EZGxL" />
+        <node concept="pQlao" id="ZRpfeISNkk" role="EZGxL">
+          <ref role="pQlar" node="4TD2_n$8mnz" resolve="False" />
         </node>
       </node>
-      <node concept="pQlao" id="4TD2_n$8m$6" role="2a5y9N">
+      <node concept="pQlao" id="ZRpfeISNmg" role="2a5y9N">
         <ref role="pQlar" node="4TD2_n$8mnz" resolve="False" />
       </node>
     </node>
