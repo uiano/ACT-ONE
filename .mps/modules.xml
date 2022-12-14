@@ -6,8 +6,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.plugin/ActOne.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.runtime/ActOne.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.samples/ActOne.samples.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ActOne.tests/ActOne.tests.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

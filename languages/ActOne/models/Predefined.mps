@@ -14,12 +14,24 @@
       </concept>
     </language>
     <language id="b4fcd96f-fa06-46a4-9520-beaeb32aa9a1" name="ActOne">
+      <concept id="8112596015367418118" name="ActOne.structure.Variables" flags="ng" index="26FcCh">
+        <child id="8112596015367418119" name="declarations" index="26FcCg" />
+        <child id="8112596015367418124" name="sort" index="26FcCr" />
+      </concept>
+      <concept id="5276604095072500071" name="ActOne.structure.VariableDeclaration" flags="ng" index="2a4bCg" />
+      <concept id="5276604095072592121" name="ActOne.structure.Axiom" flags="ng" index="2a5yee">
+        <child id="5276604095072592132" name="rightTerm" index="2a5y9N" />
+        <child id="5276604095072592129" name="leftTerm" index="2a5y9Q" />
+      </concept>
       <concept id="8445081754001449717" name="ActOne.structure.Sort" flags="ng" index="bklvD" />
       <concept id="8445081754001417286" name="ActOne.structure.Specification" flags="ng" index="bkt5q">
         <child id="8445081754001526283" name="sorts" index="blzGn" />
+        <child id="6300386900480986014" name="variables" index="pRJcv" />
+        <child id="6300386900480908542" name="axioms" index="pRMhZ" />
         <child id="6300386900480909287" name="operators" index="pRMtA" />
         <child id="6849908093511409942" name="actions" index="YRu88" />
         <child id="6816510776893429603" name="imports" index="3QKWGc" />
+        <child id="4344415521902037496" name="binaryOperators" index="1ZS7Wu" />
       </concept>
       <concept id="8445081754001646503" name="ActOne.structure.SortReference" flags="ng" index="bl5qV">
         <reference id="8445081754001646504" name="reference" index="bl5qO" />
@@ -27,13 +39,33 @@
       <concept id="4779260070289444120" name="ActOne.structure.LineComment" flags="ng" index="oBdEI">
         <property id="4779260070289444124" name="comment" index="oBdEE" />
       </concept>
+      <concept id="6300386900481288729" name="ActOne.structure.OperatorReference" flags="ng" index="pQlao">
+        <reference id="6300386900481288730" name="ref" index="pQlar" />
+        <child id="7054597004572770024" name="parameters" index="EZGxL" />
+      </concept>
       <concept id="6300386900480985806" name="ActOne.structure.Operator" flags="ng" index="pRJ9f">
         <property id="6300386900480985810" name="isConstructor" index="pRJ9j" />
         <child id="6300386900480985813" name="parameters" index="pRJ9k" />
         <child id="6300386900480985816" name="output" index="pRJ9p" />
       </concept>
+      <concept id="4885329223428928788" name="ActOne.structure.binOperand" flags="ng" index="3eBdwv">
+        <property id="4885329223428929453" name="value" index="3eBdEA" />
+      </concept>
+      <concept id="7911722725550616649" name="ActOne.structure.VariableReference" flags="ng" index="3O66mJ">
+        <reference id="7911722725550616650" name="variableRef" index="3O66mG" />
+      </concept>
       <concept id="6816510776893429610" name="ActOne.structure.SpecificationReference" flags="ng" index="3QKWG5">
         <reference id="6816510776893429611" name="reference" index="3QKWG4" />
+      </concept>
+      <concept id="4344415521899840259" name="ActOne.structure.BinaryOperation" flags="ng" index="1ZKJn_">
+        <child id="4885329223429258088" name="alias" index="3eAtpz" />
+        <child id="4344415521901264461" name="rightTerm" index="1ZP4yF" />
+        <child id="4344415521901262880" name="lefTerm" index="1ZP4V6" />
+      </concept>
+      <concept id="4344415521899843421" name="ActOne.structure.BinOperationReference" flags="ng" index="1ZKJAV">
+        <reference id="4344415521899844964" name="Oper" index="1ZKIe2" />
+        <child id="4344415521899848231" name="rightTerm" index="1ZKHj1" />
+        <child id="4344415521899846753" name="leftTerm" index="1ZKIE7" />
       </concept>
     </language>
   </registry>
@@ -128,6 +160,52 @@
   </node>
   <node concept="bkt5q" id="49jlVpri7XO">
     <property role="TrG5h" value="INTEGER" />
+    <node concept="26FcCh" id="4fcbgIdthrs" role="pRJcv">
+      <node concept="2a4bCg" id="4fcbgIdthrt" role="26FcCg">
+        <property role="TrG5h" value="b" />
+      </node>
+      <node concept="2a4bCg" id="4fcbgIdthrC" role="26FcCg">
+        <property role="TrG5h" value="d" />
+      </node>
+      <node concept="bl5qV" id="4fcbgIdthru" role="26FcCr">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+    </node>
+    <node concept="2a5yee" id="4fcbgIdthqT" role="pRMhZ">
+      <node concept="1ZKJAV" id="4fcbgIdthr8" role="2a5y9Q">
+        <ref role="1ZKIe2" node="4fcbgIdthpJ" resolve="plus" />
+        <node concept="3O66mJ" id="4fcbgIdths6" role="1ZKIE7">
+          <ref role="3O66mG" node="4fcbgIdthrt" resolve="b" />
+        </node>
+        <node concept="3O66mJ" id="4fcbgIdthsk" role="1ZKHj1">
+          <ref role="3O66mG" node="4fcbgIdthrC" resolve="d" />
+        </node>
+      </node>
+      <node concept="pQlao" id="4fcbgIdthsB" role="2a5y9N">
+        <ref role="pQlar" node="49jlVprl5$E" resolve="ADD" />
+        <node concept="3O66mJ" id="4fcbgIdthsS" role="EZGxL">
+          <ref role="3O66mG" node="4fcbgIdthrt" resolve="b" />
+        </node>
+        <node concept="3O66mJ" id="4fcbgIdthtn" role="EZGxL">
+          <ref role="3O66mG" node="4fcbgIdthrC" resolve="d" />
+        </node>
+      </node>
+    </node>
+    <node concept="1ZKJn_" id="4fcbgIdthpJ" role="1ZS7Wu">
+      <property role="TrG5h" value="plus" />
+      <node concept="bl5qV" id="4fcbgIdthpK" role="1ZP4V6">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="bl5qV" id="4fcbgIdthpL" role="1ZP4yF">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="3eBdwv" id="4fcbgIdthpM" role="3eAtpz">
+        <property role="3eBdEA" value="+" />
+      </node>
+      <node concept="bl5qV" id="4fcbgIdthpN" role="pRJ9p">
+        <ref role="bl5qO" node="49jlVpri7XP" resolve="Int" />
+      </node>
+    </node>
     <node concept="3QKWG5" id="1jOgEPzVwfj" role="3QKWGc">
       <ref role="3QKWG4" node="7zB5IrGSITB" resolve="BOOLEAN" />
     </node>

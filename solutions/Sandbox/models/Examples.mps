@@ -18,6 +18,7 @@
         <child id="8112596015367418119" name="declarations" index="26FcCg" />
         <child id="8112596015367418124" name="sort" index="26FcCr" />
       </concept>
+      <concept id="8112596015369271211" name="ActOne.structure.AnonVariable" flags="ng" index="26K0MW" />
       <concept id="5276604095072500071" name="ActOne.structure.VariableDeclaration" flags="ng" index="2a4bCg" />
       <concept id="5276604095072592121" name="ActOne.structure.Axiom" flags="ng" index="2a5yee">
         <child id="5276604095072592132" name="rightTerm" index="2a5y9N" />
@@ -682,9 +683,7 @@
       <property role="1lgsvm" value="true" />
       <node concept="pQlao" id="1NmK9fKHf7a" role="YRufA">
         <ref role="pQlar" to="zaie:NKAPmXIkBp" resolve="Length" />
-        <node concept="1mjQuQ" id="1NmK9fKHmco" role="EZGxL">
-          <ref role="1mjQuR" node="1NmK9fKHmbI" resolve="str" />
-        </node>
+        <node concept="26K0MW" id="3LatIp3g2Of" role="EZGxL" />
       </node>
     </node>
     <node concept="YRuf3" id="1NmK9fKHmcT" role="YRu88">

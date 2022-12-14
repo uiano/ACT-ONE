@@ -40,6 +40,7 @@
         <child id="6300386900480909287" name="operators" index="pRMtA" />
         <child id="6849908093511409942" name="actions" index="YRu88" />
         <child id="6816510776893429603" name="imports" index="3QKWGc" />
+        <child id="4344415521902037496" name="binaryOperators" index="1ZS7Wu" />
       </concept>
       <concept id="8445081754001646503" name="ActOne.structure.SortReference" flags="ng" index="bl5qV">
         <reference id="8445081754001646504" name="reference" index="bl5qO" />
@@ -68,18 +69,30 @@
         <property id="1509905087559793033" name="debug" index="1KuzG$" />
         <child id="6849908093511409912" name="termToReduce" index="YRufA" />
       </concept>
+      <concept id="4885329223428928788" name="ActOne.structure.binOperand" flags="ng" index="3eBdwv">
+        <property id="4885329223428929453" name="value" index="3eBdEA" />
+      </concept>
       <concept id="7333886121707328801" name="ActOne.structure.Let" flags="ng" index="1mjQuN">
         <child id="7333886121707328825" name="storeTerm" index="1mjQuF" />
       </concept>
       <concept id="7333886121707328804" name="ActOne.structure.LetReference" flags="ng" index="1mjQuQ">
         <reference id="7333886121707328805" name="reference" index="1mjQuR" />
       </concept>
-      <concept id="7911722725550616652" name="ActOne.structure.ITerm" flags="ng" index="3O66mE" />
       <concept id="7911722725550616649" name="ActOne.structure.VariableReference" flags="ng" index="3O66mJ">
         <reference id="7911722725550616650" name="variableRef" index="3O66mG" />
       </concept>
       <concept id="6816510776893429610" name="ActOne.structure.SpecificationReference" flags="ng" index="3QKWG5">
         <reference id="6816510776893429611" name="reference" index="3QKWG4" />
+      </concept>
+      <concept id="4344415521899840259" name="ActOne.structure.BinaryOperation" flags="ng" index="1ZKJn_">
+        <child id="4885329223429258088" name="alias" index="3eAtpz" />
+        <child id="4344415521901264461" name="rightTerm" index="1ZP4yF" />
+        <child id="4344415521901262880" name="lefTerm" index="1ZP4V6" />
+      </concept>
+      <concept id="4344415521899843421" name="ActOne.structure.BinOperationReference" flags="ng" index="1ZKJAV">
+        <reference id="4344415521899844964" name="Oper" index="1ZKIe2" />
+        <child id="4344415521899848231" name="rightTerm" index="1ZKHj1" />
+        <child id="4344415521899846753" name="leftTerm" index="1ZKIE7" />
       </concept>
     </language>
   </registry>
@@ -7022,6 +7035,21 @@
   </node>
   <node concept="bkt5q" id="3oOohpoN9U7">
     <property role="TrG5h" value="STACK" />
+    <node concept="1ZKJn_" id="4fcbgIdt5tP" role="1ZS7Wu">
+      <property role="TrG5h" value="plus" />
+      <node concept="bl5qV" id="4fcbgIdt5tQ" role="1ZP4V6">
+        <ref role="bl5qO" to="zaie:49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="bl5qV" id="4fcbgIdt5tR" role="1ZP4yF">
+        <ref role="bl5qO" to="zaie:49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="3eBdwv" id="4fcbgIdt5tS" role="3eAtpz">
+        <property role="3eBdEA" value="+" />
+      </node>
+      <node concept="bl5qV" id="4fcbgIdt5tT" role="pRJ9p">
+        <ref role="bl5qO" to="zaie:49jlVpri7XP" resolve="Int" />
+      </node>
+    </node>
     <node concept="26FcCh" id="72lILvQkYXs" role="pRJcv">
       <node concept="2a4bCg" id="3oOohpoN9VS" role="26FcCg">
         <property role="TrG5h" value="s" />
@@ -7036,6 +7064,9 @@
       </node>
       <node concept="bl5qV" id="72lILvQkYZ4" role="26FcCr">
         <ref role="bl5qO" to="zaie:49jlVpri7XP" resolve="Int" />
+      </node>
+      <node concept="2a4bCg" id="4fcbgIcrFs0" role="26FcCg">
+        <property role="TrG5h" value="b" />
       </node>
     </node>
     <node concept="YRuf3" id="3oOohpoNa6m" role="YRu88">
@@ -7151,14 +7182,32 @@
         </node>
       </node>
     </node>
-    <node concept="YRuf3" id="3LatIp2OaQn" role="YRu88">
+    <node concept="YRuf3" id="4fcbgIdt65E" role="YRu88">
       <property role="1lq2J7" value="0" />
       <property role="1lgsvm" value="true" />
-      <property role="1KuzG$" value="true" />
-      <node concept="2GQ0ll" id="3LatIp2Ob4A" role="YRufA">
-        <property role="p6XkA" value="1" />
+      <node concept="1ZKJAV" id="4fcbgIdt66y" role="YRufA">
+        <ref role="1ZKIe2" node="4fcbgIdt5tP" resolve="plus" />
+        <node concept="2GQ0ll" id="4fcbgIdt66Q" role="1ZKIE7">
+          <property role="p6XkA" value="1" />
+        </node>
+        <node concept="1ZKJAV" id="4fcbgIdt67l" role="1ZKHj1">
+          <ref role="1ZKIe2" node="4fcbgIdt5tP" resolve="plus" />
+          <node concept="2GQ0ll" id="4fcbgIdt67F" role="1ZKIE7">
+            <property role="p6XkA" value="2" />
+          </node>
+          <node concept="1ZKJAV" id="4fcbgIdt69C" role="1ZKHj1">
+            <ref role="1ZKIe2" node="4fcbgIdt5tP" resolve="plus" />
+            <node concept="2GQ0ll" id="4fcbgIdt69W" role="1ZKIE7">
+              <property role="p6XkA" value="3" />
+            </node>
+            <node concept="2GQ0ll" id="4fcbgIdt6a7" role="1ZKHj1">
+              <property role="p6XkA" value="4" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="rdghn" id="4fcbgIdhrm8" role="YRu88" />
     <node concept="2a5yee" id="3oOohpoN9Wj" role="pRMhZ">
       <node concept="pQlao" id="3oOohpoN9Wt" role="2a5y9Q">
         <ref role="pQlar" node="3oOohpoN9Vo" resolve="top" />
@@ -7193,24 +7242,6 @@
         <ref role="3O66mG" node="3oOohpoN9VS" resolve="s" />
       </node>
     </node>
-    <node concept="2a5yee" id="3LatIp3dMXU" role="pRMhZ">
-      <node concept="pQlao" id="3LatIp3dN6Q" role="2a5y9Q">
-        <ref role="pQlar" node="3LatIp3dN15" resolve="mt" />
-      </node>
-      <node concept="pQlao" id="3LatIp3f5DP" role="2a5y9N">
-        <ref role="pQlar" to="zaie:49jlVprl5$E" resolve="ADD" />
-        <node concept="26K0MW" id="3LatIp3fIq0" role="EZGxL" />
-        <node concept="pQlao" id="3LatIp3f5Og" role="EZGxL">
-          <ref role="pQlar" to="zaie:49jlVprl5$E" resolve="ADD" />
-          <node concept="26K0MW" id="3LatIp3f5SW" role="EZGxL" />
-          <node concept="pQlao" id="3LatIp3fIsn" role="EZGxL">
-            <ref role="pQlar" to="zaie:49jlVprl5$E" resolve="ADD" />
-            <node concept="26K0MW" id="3LatIp3fItO" role="EZGxL" />
-            <node concept="3O66mE" id="3LatIp3fIuR" role="EZGxL" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2a5yee" id="3oOohpoNa1$" role="pRMhZ">
       <node concept="pQlao" id="3oOohpoNa1U" role="2a5y9Q">
         <ref role="pQlar" node="3oOohpoN9V3" resolve="isEmpty" />
@@ -7220,6 +7251,26 @@
       </node>
       <node concept="pQlao" id="3oOohpoNa2g" role="2a5y9N">
         <ref role="pQlar" to="zaie:34Rb5Oc3jw_" resolve="True" />
+      </node>
+    </node>
+    <node concept="2a5yee" id="4fcbgIddMUs" role="pRMhZ">
+      <node concept="pQlao" id="4fcbgIddMXB" role="2a5y9N">
+        <ref role="pQlar" to="zaie:49jlVprl5$E" resolve="ADD" />
+        <node concept="3O66mJ" id="4fcbgIddMYg" role="EZGxL">
+          <ref role="3O66mG" node="3oOohpoN9VX" resolve="d" />
+        </node>
+        <node concept="3O66mJ" id="4fcbgIddMZ8" role="EZGxL">
+          <ref role="3O66mG" node="4fcbgIcrFs0" resolve="b" />
+        </node>
+      </node>
+      <node concept="1ZKJAV" id="4fcbgIdt5zL" role="2a5y9Q">
+        <ref role="1ZKIe2" node="4fcbgIdt5tP" resolve="plus" />
+        <node concept="3O66mJ" id="4fcbgIdt5Oh" role="1ZKIE7">
+          <ref role="3O66mG" node="4fcbgIcrFs0" resolve="b" />
+        </node>
+        <node concept="3O66mJ" id="4fcbgIdt5Kb" role="1ZKHj1">
+          <ref role="3O66mG" node="3oOohpoN9VX" resolve="d" />
+        </node>
       </node>
     </node>
     <node concept="2a5yee" id="3oOohpoNa2_" role="pRMhZ">
@@ -7289,6 +7340,15 @@
     <node concept="pRJ9f" id="3LatIp3dN15" role="pRMtA">
       <property role="TrG5h" value="mt" />
       <node concept="bl5qV" id="3LatIp3dN16" role="pRJ9p">
+        <ref role="bl5qO" to="zaie:7zB5IrGSITC" resolve="Bool" />
+      </node>
+    </node>
+    <node concept="pRJ9f" id="3LatIp3nqcT" role="pRMtA">
+      <property role="TrG5h" value="one" />
+      <node concept="bl5qV" id="3LatIp3nqfU" role="pRJ9k">
+        <ref role="bl5qO" to="zaie:7zB5IrGSITC" resolve="Bool" />
+      </node>
+      <node concept="bl5qV" id="3LatIp3nqcU" role="pRJ9p">
         <ref role="bl5qO" to="zaie:7zB5IrGSITC" resolve="Bool" />
       </node>
     </node>
