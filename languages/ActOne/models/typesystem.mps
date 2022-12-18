@@ -119,6 +119,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -2235,7 +2238,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="3LatIp3h$mU">
-    <property role="TrG5h" value="AnonRHSBan" />
+    <property role="TrG5h" value="AnonVariableConstraints" />
     <node concept="3clFbS" id="3LatIp3h$mV" role="18ibNy">
       <node concept="3clFbJ" id="3LatIp3nu9_" role="3cqZAp">
         <node concept="2OqwBi" id="3LatIp3nw9r" role="3clFbw">
@@ -2278,6 +2281,48 @@
           </node>
           <node concept="3clFbH" id="3LatIp3n$b0" role="3cqZAp" />
         </node>
+        <node concept="3eNFk2" id="zxCHUSN5E6" role="3eNLev">
+          <node concept="2OqwBi" id="zxCHUSN7T6" role="3eO9$A">
+            <node concept="2OqwBi" id="zxCHUSN5Sv" role="2Oq$k0">
+              <node concept="1YBJjd" id="zxCHUSN5Hp" role="2Oq$k0">
+                <ref role="1YBMHb" node="3LatIp3h$xa" resolve="aV" />
+              </node>
+              <node concept="z$bX8" id="zxCHUSN6ln" role="2OqNvi" />
+            </node>
+            <node concept="2HwmR7" id="zxCHUSNaDX" role="2OqNvi">
+              <node concept="1bVj0M" id="zxCHUSNaDZ" role="23t8la">
+                <node concept="3clFbS" id="zxCHUSNaE0" role="1bW5cS">
+                  <node concept="3clFbF" id="zxCHUSNaLo" role="3cqZAp">
+                    <node concept="2OqwBi" id="zxCHUSNaYF" role="3clFbG">
+                      <node concept="37vLTw" id="zxCHUSNaLn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="zxCHUSNaE1" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="zxCHUSNbn5" role="2OqNvi">
+                        <node concept="chp4Y" id="zxCHUSNbvH" role="cj9EA">
+                          <ref role="cht4Q" to="2rg6:6n7cD8Ny5kJ" resolve="IAction" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="zxCHUSNaE1" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="zxCHUSNaE2" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="zxCHUSN5E8" role="3eOfB_">
+            <node concept="2MkqsV" id="zxCHUSO6zG" role="3cqZAp">
+              <node concept="Xl_RD" id="zxCHUSO6$n" role="2MkJ7o">
+                <property role="Xl_RC" value="no_kind_error, enter a let or a value of correct type" />
+              </node>
+              <node concept="1YBJjd" id="zxCHUSO6VO" role="1urrMF">
+                <ref role="1YBMHb" node="3LatIp3h$xa" resolve="aV" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1YaCAy" id="3LatIp3h$xa" role="1YuTPh">
@@ -2292,7 +2337,7 @@
         <node concept="3clFbS" id="3LatIp3qKVW" role="3clFbx">
           <node concept="2MkqsV" id="3LatIp3tCjy" role="3cqZAp">
             <node concept="Xl_RD" id="3LatIp3tCl1" role="2MkJ7o">
-              <property role="Xl_RC" value="The variables are for use in the axioms, not as c-style variables" />
+              <property role="Xl_RC" value="Unexpected variable definition, do not define the values of variables" />
             </node>
             <node concept="2OqwBi" id="3LatIp3tDEo" role="1urrMF">
               <node concept="1YBJjd" id="3LatIp3tDxU" role="2Oq$k0">
@@ -2324,6 +2369,66 @@
     <node concept="1YaCAy" id="3LatIp3j15l" role="1YuTPh">
       <property role="TrG5h" value="axiom" />
       <ref role="1YaFvo" to="2rg6:4$UgRv3b63T" resolve="Axiom" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="zxCHUT7u3U">
+    <property role="TrG5h" value="StringValueWarning" />
+    <node concept="3clFbS" id="zxCHUT7u3V" role="18ibNy">
+      <node concept="3clFbJ" id="zxCHUT7u7c" role="3cqZAp">
+        <node concept="3clFbS" id="zxCHUT7u7e" role="3clFbx">
+          <node concept="a7r0C" id="zxCHUT7zkN" role="3cqZAp">
+            <node concept="Xl_RD" id="zxCHUT7zld" role="a7wSD">
+              <property role="Xl_RC" value="This will make your right side string reduce to your left side value and lead to unexpected behavior" />
+            </node>
+            <node concept="1YBJjd" id="zxCHUT7zsR" role="1urrMF">
+              <ref role="1YBMHb" node="zxCHUT7u6b" resolve="sV" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="zxCHUT7uic" role="3clFbw">
+          <node concept="1YBJjd" id="zxCHUT7u7_" role="2Oq$k0">
+            <ref role="1YBMHb" node="zxCHUT7u6b" resolve="sV" />
+          </node>
+          <node concept="1BlSNk" id="zxCHUTcVnh" role="2OqNvi">
+            <ref role="1BmUXE" to="2rg6:4$UgRv3b63T" resolve="Axiom" />
+            <ref role="1Bn3mz" to="2rg6:4$UgRv3b641" resolve="leftTerm" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="zxCHUT7u6b" role="1YuTPh">
+      <property role="TrG5h" value="sV" />
+      <ref role="1YaFvo" to="2rg6:61ja3Rczktu" resolve="StringValue" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="zxCHUT7ztj">
+    <property role="TrG5h" value="IntValueWarning" />
+    <node concept="3clFbS" id="zxCHUT7ztk" role="18ibNy">
+      <node concept="3clFbJ" id="zxCHUT7zv4" role="3cqZAp">
+        <node concept="3clFbS" id="zxCHUT7zv6" role="3clFbx">
+          <node concept="a7r0C" id="zxCHUT7BY5" role="3cqZAp">
+            <node concept="Xl_RD" id="zxCHUT7BYv" role="a7wSD">
+              <property role="Xl_RC" value="This will make your right side integer reduce to your left side value and lead to unexpected results" />
+            </node>
+            <node concept="1YBJjd" id="zxCHUT7FL6" role="1urrMF">
+              <ref role="1YBMHb" node="zxCHUT7ztE" resolve="iV" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="zxCHUT7zDZ" role="3clFbw">
+          <node concept="1YBJjd" id="zxCHUT7zvo" role="2Oq$k0">
+            <ref role="1YBMHb" node="zxCHUT7ztE" resolve="iV" />
+          </node>
+          <node concept="1BlSNk" id="zxCHUTcXfl" role="2OqNvi">
+            <ref role="1BmUXE" to="2rg6:4$UgRv3b63T" resolve="Axiom" />
+            <ref role="1Bn3mz" to="2rg6:4$UgRv3b641" resolve="leftTerm" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="zxCHUT7ztE" role="1YuTPh">
+      <property role="TrG5h" value="iV" />
+      <ref role="1YaFvo" to="2rg6:61ja3RcyMPC" resolve="IntValue" />
     </node>
   </node>
 </model>

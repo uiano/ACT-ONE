@@ -37,6 +37,9 @@
       <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
         <reference id="4239542196496929559" name="action" index="1iFR8X" />
       </concept>
+      <concept id="1101347953350122758" name="jetbrains.mps.lang.test.structure.BootstrapActionReference" flags="ng" index="3iKlGA">
+        <property id="1101347953350127918" name="actionId" index="3iKnse" />
+      </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
@@ -58,10 +61,22 @@
     <language id="b4fcd96f-fa06-46a4-9520-beaeb32aa9a1" name="ActOne">
       <concept id="8445081754001449717" name="ActOne.structure.Sort" flags="ng" index="bklvD" />
       <concept id="8445081754001417286" name="ActOne.structure.Specification" flags="ng" index="bkt5q">
+        <child id="6849908093511409942" name="actions" index="YRu88" />
         <child id="6816510776893429603" name="imports" index="3QKWGc" />
       </concept>
+      <concept id="6849908093511409885" name="ActOne.structure.Reduce" flags="ng" index="YRuf3">
+        <property id="1955001717827324002" name="exhaustive" index="1lgsvm" />
+        <property id="1955001717825840243" name="steps" index="1lq2J7" />
+        <child id="6849908093511409912" name="termToReduce" index="YRufA" />
+      </concept>
+      <concept id="7911722725550616652" name="ActOne.structure.ITerm" flags="ng" index="3O66mE" />
       <concept id="6816510776893429610" name="ActOne.structure.SpecificationReference" flags="ng" index="3QKWG5">
         <reference id="6816510776893429611" name="reference" index="3QKWG4" />
+      </concept>
+      <concept id="4344415521899843421" name="ActOne.structure.BinOperationReference" flags="ng" index="1ZKJAV">
+        <reference id="4344415521899844964" name="Oper" index="1ZKIe2" />
+        <child id="4344415521899848231" name="rightTerm" index="1ZKHj1" />
+        <child id="4344415521899846753" name="leftTerm" index="1ZKIE7" />
       </concept>
     </language>
   </registry>
@@ -168,6 +183,57 @@
         <property role="2TTd_B" value="STRING" />
       </node>
       <node concept="3clFbH" id="3LatIp2L87m" role="3cqZAp" />
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3qGjjxdGbCA">
+    <property role="TrG5h" value="binOpRefTest" />
+    <node concept="1qefOq" id="3qGjjxdGbDf" role="25YQCW">
+      <node concept="bkt5q" id="3qGjjxdGbDo" role="1qenE9">
+        <property role="TrG5h" value="binOpTest" />
+        <node concept="YRuf3" id="3qGjjxdGcyw" role="YRu88">
+          <property role="1lq2J7" value="0" />
+          <property role="1lgsvm" value="true" />
+          <node concept="3O66mE" id="3qGjjxdGcyS" role="YRufA">
+            <node concept="LIFWc" id="3qGjjxdGczi" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="Error" />
+            </node>
+          </node>
+        </node>
+        <node concept="3QKWG5" id="3qGjjxdGbE2" role="3QKWGc">
+          <ref role="3QKWG4" to="zaie:49jlVpri7XO" resolve="INTEGER" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3qGjjxdGbF7" role="25YQFr">
+      <node concept="bkt5q" id="3qGjjxdGbFl" role="1qenE9">
+        <property role="TrG5h" value="binOpTest" />
+        <node concept="YRuf3" id="3qGjjxdGbGd" role="YRu88">
+          <property role="1lq2J7" value="0" />
+          <property role="1lgsvm" value="true" />
+          <node concept="1ZKJAV" id="3qGjjxdGbGw" role="YRufA">
+            <ref role="1ZKIe2" to="zaie:O3jyTdro_" />
+            <node concept="3O66mE" id="3qGjjxdGbHt" role="1ZKIE7" />
+            <node concept="3O66mE" id="3qGjjxdGbHE" role="1ZKHj1" />
+          </node>
+        </node>
+        <node concept="3QKWG5" id="3qGjjxdGbFF" role="3QKWGc">
+          <ref role="3QKWG4" to="zaie:49jlVpri7XO" resolve="INTEGER" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3qGjjxdGbHR" role="LjaKd">
+      <node concept="2TK7Tu" id="3qGjjxdGd7U" role="3cqZAp">
+        <property role="2TTd_B" value="+" />
+      </node>
+      <node concept="2HxZob" id="3qGjjxdGdjF" role="3cqZAp">
+        <node concept="3iKlGA" id="3qGjjxdGdjM" role="3iKnsn">
+          <property role="3iKnse" value="EditorEnter" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
