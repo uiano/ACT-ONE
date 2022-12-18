@@ -53,8 +53,32 @@ It is adapted to the needs of the course DAT233 at University of Agder.
 ### Built-in types
 The ACT ONE IDE comes with the following built-in types: ANY, BOOLEAN, INTEGER, STRING.
 Their interface is defined in ACT ONE itself. You find those definitions in the 'Modules Pool'/Languages/ActOne/accessories.
-If you want to use one of those languages, you need to import it.
-
+If you want to use one of those types, you need to import it.
+The built in types contain operators for those types.
+BOOLEAN contains:
+not
+And
+Or
+Equal
+If_Then_else
+INTEGER contains:
+ADD	+	Addition
+SUB	-	Subtraction
+MUL	*	Multiplication
+DIV	/	Division
+POW	^	To the power of
+MOD	%	Modulus
+EQ_GR	>=	Equals or greater than
+GR	>	greater than
+STRING contains:
+Length
+Append
+Slice
+For integer operations it possible to use them on the form ADD(1,1) or 1 + 1. These yield the same result. 
+To use the operations on the form 1 + 1 you must type + then enter and then enter the desired numbers on either side of the symbol.
+If you wish to write longer expressions you must consider how the expression is built. 
+For instance if you wish to enter 1 + 1 * 2 you must first type + to create the plus operation and then add 1 one the left hand side and then 
+on the right hand side type * to create the multiplication operation. Then you must type 1 one left side of the * symbol and 2 on the right side.
 ### Detailed language description
 An ACT ONE specification has the following overall format.
 ```
@@ -62,6 +86,7 @@ Specification <name> is
 Imports <imports>
 Sorts <sorts>
 Operators <operators>
+Aliases <aliases>
 Variables <variables>
 Axioms <axioms>
 Reductions <reductions>
