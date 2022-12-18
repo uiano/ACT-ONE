@@ -63,6 +63,7 @@ Equal<p>
 If_Then_else<p>
 INTEGER contains:<p>
 |Operator name|Symbol|Action|
+|--|--|--|
 |ADD	|+	|Addition|
 |SUB	|-	|Subtraction|
 |MUL	|*	|Multiplication|
