@@ -102,6 +102,7 @@ Reductions <reductions>
 `oper: <opname> : <inputs> -> <output>`.  <p>
 `<inputs>` is a possibly empty list of parameter types for the operator.<p>
 `<output>` is the result type of the operator.  <p>
+`<Aliases>` should be ignored as they only allow you define symbols for operations such as + for ADD as seen in INTEGER<p>
 `<variables>` is a list of variables with format `var <varname> : <sort>`.<p>
 `<sort>` is the name of a sort.  <p>
 `<axioms>` is a list of axioms with format `axiom: <term> = <term>`.<p>
