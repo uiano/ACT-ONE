@@ -62,57 +62,16 @@ Or<p>
 Equal<p>
 If_Then_else<p>
 INTEGER contains:<p>
-<table>
-	<tr>
-		<th>Operator name</th>
-		<th>Symbol</th>
-		<th>Action</th>
-	</tr>
-
-	<tr>
-		<th>ADD</th>
-		<th>+</th>
-		<th>Addition</th>
-	</tr>
-
-	<tr>
-		<th>SUB</th>
-		<th>-</th>
-		<th>Subtraction</th>
-	</tr>
-
-	<tr>
-		<th>MUL</th>
-		<th>*</th>
-		<th>Multiplication</th>
-	</tr>
-
-	<tr>
-		<th>DIV</th>
-		<th>/</th>
-		<th>Division</th>
-	</tr>
-	<tr>
-		<th>POW</th>
-		<th>^</th>
-		<th>To the power of</th>
-	</tr>
-	<tr>
-		<th>MOD</th>
-		<th>%</th>
-		<th>modulus</th>
-	</tr>
-	<tr>
-		<th>EQ_GR</th>
-		<th>>=</th>
-		<th>Equal or greater</th>
-	</tr>
-	<tr>
-		<th>GR</th>
-		<th>></th>
-		<th>Greater than</th>
-	</tr>
-</table>
+|Operator name|Symbol|Action|
+|-------------|------|------|
+|ADD	|+	|Addition|
+|SUB	|-	|Subtraction|
+|MUL	|*	|Multiplication|
+|DIV	|/	|Division|
+|POW	|^	|To the power of|
+|MOD	|%	|Modulus|
+|EQ_GR	|>=	|Equals or greater than|
+|GR	|>	|greater than|
 STRING contains:<p>
 Length<p>
 Append<p>
