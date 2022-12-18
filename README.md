@@ -9,6 +9,9 @@ In the current [release](/../../releases), you find the plugin.
 Store the zip-file and open File->Settings->Plugins.
 Click on the gearwheel symbol and install from disk, where you stored the file.
 
+NOTE: When first using a fresh copy ACT ONE IDE a large number of errors will appear. 
+Simply ignore these errors as they are a result of elements not having been generated. 
+
 ## User manual
 The language and the IDE are described in the [User Manual](documentation/UserManual.md).
 
