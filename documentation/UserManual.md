@@ -63,7 +63,6 @@ Equal<p>
 If_Then_else<p>
 INTEGER contains:<p>
 |Operator name|Symbol|Action|
-|-------------|------|------|
 |ADD	|+	|Addition|
 |SUB	|-	|Subtraction|
 |MUL	|*	|Multiplication|
@@ -72,6 +71,7 @@ INTEGER contains:<p>
 |MOD	|%	|Modulus|
 |EQ_GR	|>=	|Equals or greater than|
 |GR	|>	|greater than|
+
 STRING contains:<p>
 Length<p>
 Append<p>
