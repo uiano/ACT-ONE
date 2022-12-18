@@ -56,29 +56,72 @@ Their interface is defined in ACT ONE itself. You find those definitions in the 
 If you want to use one of those types, you need to import it.
 The built in types contain operators for those types.
 BOOLEAN contains:
-not
-And
-Or
-Equal
-If_Then_else
-INTEGER contains:
-ADD	+	Addition
-SUB	-	Subtraction
-MUL	*	Multiplication
-DIV	/	Division
-POW	^	To the power of
-MOD	%	Modulus
-EQ_GR	>=	Equals or greater than
-GR	>	greater than
-STRING contains:
-Length
-Append
-Slice
-For integer operations it possible to use them on the form ADD(1,1) or 1 + 1. These yield the same result. 
-To use the operations on the form 1 + 1 you must type + then enter and then enter the desired numbers on either side of the symbol.
-If you wish to write longer expressions you must consider how the expression is built. 
-For instance if you wish to enter 1 + 1 * 2 you must first type + to create the plus operation and then add 1 one the left hand side and then 
-on the right hand side type * to create the multiplication operation. Then you must type 1 one left side of the * symbol and 2 on the right side.
+not<p>
+And<p>
+Or<p>
+Equal<p>
+If_Then_else<p>
+INTEGER contains:<p>
+<table>
+	<tr>
+		<th>Operator name</th>
+		<th>Symbol</th>
+		<th>Action</th>
+	</tr>
+
+	<tr>
+		<th>ADD</th>
+		<th>+</th>
+		<th>Addition</th>
+	</tr>
+
+	<tr>
+		<th>SUB</th>
+		<th>-</th>
+		<th>Subtraction</th>
+	</tr>
+
+	<tr>
+		<th>MUL</th>
+		<th>*</th>
+		<th>Multiplication</th>
+	</tr>
+
+	<tr>
+		<th>DIV</th>
+		<th>/</th>
+		<th>Division</th>
+	</tr>
+	<tr>
+		<th>POW</th>
+		<th>^</th>
+		<th>To the power of</th>
+	</tr>
+	<tr>
+		<th>MOD</th>
+		<th>%</th>
+		<th>modulus</th>
+	</tr>
+	<tr>
+		<th>EQ_GR</th>
+		<th>>=</th>
+		<th>Equal or greater</th>
+	</tr>
+	<tr>
+		<th>GR</th>
+		<th>></th>
+		<th>Greater than</th>
+	</tr>
+</table>
+STRING contains:<p>
+Length<p>
+Append<p>
+Slice<p>
+For integer operations it possible to use them on the form ADD(1,1) or 1 + 1. These yield the same result. <p>
+To use the operations on the form 1 + 1 you must type + then enter and then enter the desired numbers on either side of the symbol.<p>
+If you wish to write longer expressions you must consider how the expression is built. <p>
+For instance if you wish to enter 1 + 1 * 2 you must first type + to create the plus operation and then add 1 one the left hand side and then <p>
+on the right hand side type * to create the multiplication operation. Then you must type 1 one left side of the * symbol and 2 on the right side.<p>
 ### Detailed language description
 An ACT ONE specification has the following overall format.
 ```
