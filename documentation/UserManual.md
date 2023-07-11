@@ -3,8 +3,11 @@ This user manual describes the features of the specification language ACT ONE in
 The IDE allows to create ACT ONE specifications and to evaluate terms later.
 
 ## Installation
-In the current [release](/../../releases), binaries for Windows, Linux, and Mac are provided.
-Extract the distribution and run the actone script.
+ACT ONE is provided as a plugin for [MPS](https://www.jetbrains.com/mps/),
+which needs to be installed from [here](https://www.jetbrains.com/help/mps/installation-guide.html).
+In the current [release](/../../releases), you find the plugin.
+Store the zip-file and open File->Settings->Plugins.
+Click on the gearwheel symbol and install from disk, where you stored the file.
 
 ## Using the IDE
 The IDE is based on MPS and features a projectional editor. 
@@ -52,7 +55,9 @@ It is adapted to the needs of the course DAT233 at University of Agder.
 
 ### Built-in types
 The ACT ONE IDE comes with the following built-in types: ANY, BOOLEAN, INTEGER, STRING.
-Their interface is defined in ACT ONE itself. You find those definitions in the 'Modules Pool'/Languages/ActOne/accessories.
+Their interface is defined in ACT ONE itself. 
+You find those definitions in the 'Modules Pool'/Languages/ActOne/accessories 
+and also in the [overview of the predefined types](./Predefined.md). 
 If you want to use one of those languages, you need to import it.
 
 ### Detailed language description
